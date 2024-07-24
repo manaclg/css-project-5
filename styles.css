@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body{
+    overflow-x: hidden;
+}
+
+/* header css */
+header {
+    width: 100vw;
+    /* vw :- viewport width */
+    height: 100vh;
+    background-image: url(./images/header-bg.png);
+    background-position: bottom;
+    background-size: cover;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.head-content{
+    text-align: center;
+}
+
+.head-content h4{
+    font-size: 4vmin; /* vmin  :- viewport minimum*/
+    margin-bottom: 20px;
+
+}
+
+.line{
+    width: 150px;
+    height: 5px;
+    background-color: #ff0077;
+    margin: auto;
+
+}
+
+.head-content h1{
+    font-size: 7vmin;
+    margin: 30px 0;
+    text-transform: uppercase;
+
+}
+
+
+.btn{
+    padding: 8px 15px;
+    background-color: #ff0077;
+    color: whitesmoke;
+    border-radius: 30px;
+    transition: 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.btn:hover{
+    background-color: whitesmoke;
+    color: #ff0077;
+    border: 2px solid #ff0077;
+}
+
+/* Nav section css */
+.navbar{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    color:whitesmoke;
+    font-size: 4vmin;
+    font-weight: 800;
+    transition: 0.3s ease;
+}
+
+.logo:hover{
+    color: #ff0077;
+    transform: scale(1.1);
+    text-shadow: 0 0 25px #ff0077 , 0 0 50px #ff0077;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a{
+    color: whitesmoke;
+    margin: 0 30px;
+    transition: 0.3s ease;
+    border: 2px solid transparent;
+    font-weight: 600;
+
+}
+
+.nav-links a:hover{
+    color: #ff0077;
+    border-bottom: 2px solid #ff0077;
+}
+
+#contact{
+    border-bottom: 0;
+}
+
+
+
+/* Menu css */
+.menu{
+    width: 30px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: none;
+
+}
+
+
+/* events section css */
+
+.events{
+    width: 80%;
+    margin: 50px auto;
+    
+
+}
+
+
+.event-content{
+    text-align: center;
+}
+.event-content h1{
+    font-size: 7vmin;
+    color: #2b033adc;
+
+}
+
+.row{
+
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.row .col h4{
+    font-size: 4vmin;
+    color: #09033ade;
+    margin: 10px 30px;
+}
+
+.row .col p{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.757);
+    margin-bottom: 30px;
+    padding: 10px 40px;
+}
+
+
+.row .col img{
+    width: 80%;
+}
+
+
+/* explore section css */
+
+.explore{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/bg2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.explore-content{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.explore-content h1{
+    font-size: 7vmin;
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+
+.explore-content p{
+    font-size: 16px;
+    margin:20px 30px;
+
+}
+
+
+
+
+
+/* tour section css */
+
+.tours{
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+
+}
+
+.tour-content{
+    width: 40%;
+}
+
+.tour-content h1{
+    font-size: 7vmin;
+}
+.tour-content .line{
+    margin-left: 1px;
+}
+
+.tour-content p{
+    margin: 30px 0 40px;
+}
+
+
+.tour-imgs{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+}
+
+.tour-imgs img{
+    width: 250px;
+    margin: 10px;
+
+}
+
+
+
+footer{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: whitesmoke;
+
+}
+
+
+
+img{
+    transition: all 0.5s ease;
+}
+
+
+img:hover{
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+
+
+
+
+@media screen and (max-width:800px) {
+    
+    .navbar{
+        padding: 0;
+    }
+    
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        font-size: 5vmin;
+
+    }
+    .nav-links{
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        background-color: #2b033a;
+        margin-top: -900px;
+        transition: 0.5s ease;
+
+    }
+
+    .nav-links a{
+        margin: 20px 0;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    .open-close-menu{
+        margin-top: 0;
+        border-bottom-right-radius: 300px;
+        
+    }
+
+    .row{
+
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    
+.col{
+    margin: 20px;
+}
+    
+
+
+.row .col img{
+    width: 100%;
+}
+
+
+.tours{
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.tour-content{
+    width: 80%;
+
+}
+
+
+.tour-imgs{
+    width: 90%;
+    margin-top: 30px;
+}
+
+.tour-imgs img{
+    width: 90%;
+
+}
+
+footer{
+    text-align: center;
+}
+
+
+
+
+
+    
+}
